@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Distance Calculator</title>
+    <script src="distanceApp.js"></script>
+</head>
+<body>
+    <h3>Enter any capital city in the world</h3>
+    <br><br>
+    <div>
+        <input type="text" id="city" placeholder="Enter a valid capital city" aria-label="Destination">
+        <br>
+        <br>
+        <input type="button" value="Go !" id="Go" onclick="fetchCityInfo();">
+    </div>
+
+    <div>
+        <b><p id="msg"></b>
+        <br>
+        <b><p id="distInfoMiles"></b>
+        <br>
+        <b><p id="distInfoKm"></b>
+    </div>
+
+    <input type="submit" onclick="showCitiesInSession()" value="Last searches made by you">
+    <div id="citiesInSession">
+
+    </div>
+    <br>
+    <input type="submit" onclick="showCitiesInLocal()" value="Last searches by our users">
+    <div id="citiesInLocal">
+
+    </div>
+</body>
+</html>
